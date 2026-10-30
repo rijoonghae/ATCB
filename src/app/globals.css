@@ -145,6 +145,11 @@ section[id], footer[id] { scroll-margin-top: 24px; }
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+::selection {
+  background: #ffd900;
+  color: #272098;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

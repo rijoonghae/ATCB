@@ -10,7 +10,7 @@ const rows = [
   [
     { tag: "#1 HEIS", title: "The Witness", img: witness, text:  "They saw it happen. They remember every detail. But when it mattered, they had nothing to say."},
     { tag: "#2 DUO", title: "The Abstract", img: abstract, text: "They turned everything into ideas. Much easier to handle people once you’ve removed the actual people." },
-    { tag: "#3 TREIS", title:"The Ignorant", img: ignorant, text: "These people are the worst. They know enough to have an opinion, but never enough to question it." },
+    { tag: "#3 TREIS", title:"The Ignorant", img: ignorant, text: "These people are the worst. They know enough to have an opinion, but never enough to spill it out." },
   ],
   [
     { tag: "#4 TETTARES", title: "The Messenger", img: messenger, text: "They pass the story on, but never quite as they found it. A detail removed. A name forgotten." },
@@ -61,8 +61,8 @@ export default function Home() {
 
       <section id="gallery" aria-label="The archive" className="gallery relative mt-6 min-h-[2655px] rounded-[10px] bg-cream px-5 pb-25 pt-25.5">
         <div className="mx-auto max-w-295.5">
-          <header className="flex flex-col items-start gap-6 md:flex-row md:gap-4">
-            <Image src="/img/bdfm.png" alt="" width={75} height={72} className="md:self-center" />
+          <header className="flex flex-col items-start gap-6 md:flex-row md:items-center md:gap-4">
+            <Image src="/img/bdfm.png" alt="ATCB Pixel" width={75} height={72} />
             <div className="w-full max-w-146">
               <h2 className="w-full max-w-68.5 font-serif text-[39.81px] font-bold leading-8 tracking-tighter md:text-center">
                 THE CAUSES.
