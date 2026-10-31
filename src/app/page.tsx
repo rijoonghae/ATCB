@@ -50,7 +50,7 @@ export default function Home() {
         <div className="relative isolate mb-[3.5 aspect-813/588 w-full max-w-203 shrink-0">
           <div aria-hidden="true" className="absolute inset-0 -z-10 translate-y-3.5 rounded-[5px] border-[3px] border-white bg-cream" />
           <video autoPlay loop muted playsInline disablePictureInPicture disableRemotePlayback preload="auto" className="pointer-events-none h-full w-full rounded-[5px] border-2 border-cream object-cover" aria-label="Animated All the Cities Burned artwork">
-            <source src="/img/animated-atcb.webm" type="video/webm" />
+            <source src="/img/animated-atcb-3-720p.webm" type="video/webm" />
           </video>
         </div>
       </section>
