@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ArchiveMarquee from "./archive-marquee";
+import Navbar from "./navbar";
 import TextAnimation from "@/components/ui/scroll-text";
 import witness from "../../assets/1-the-witness.webp";
 import abstract from "../../assets/2-the-abstract.webp";
@@ -26,14 +27,7 @@ export default function Home() {
         <Image src="/img/main-background.avif" alt="" fill preload sizes="100vw" className="scale-[1.1] object-cover bg-blue opacity-80" />
         {/* // FADE: atas dan bawah layer Hero → Showcase, tanpa blur samping */}
         <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 top-[82.27%] h-149 bg-[linear-gradient(to_bottom,transparent_0%,#272098_18%,#272098_82%,transparent_100%)]" />
-        <nav aria-label="Main navigation" className="fixed left-1/2 top-10.25 z-50 flex h-13.75 w-82 max-w-[calc(100%-32px)] -translate-x-1/2 items-center justify-center gap-5 rounded-[5px] bg-[#FFF5C8] text-[15px] font-bold tracking-tighter text-blue shadow-[0_2px_13px_rgba(39,32,152,0.3)]">
-          <a href="#">
-            <Image src="/img/symbol.png" alt="ATCB" width={26} height={25} />
-          </a>
-          <a href="#contact">KULTUS</a>
-          <a href="#gallery">THE ART</a>
-          <a href="#about">ABOUT</a>
-        </nav>
+        <Navbar />
         <h1 className="absolute left-[max(20px,calc(50%-588px))] top-92 font-serif text-[84px] font-bold italic leading-17.25 tracking-tighter text-[#FFD900]">
           all the<br />cities burned
         </h1>
@@ -55,7 +49,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="relative  my-15 z-10 overflow-hidden whitespace-nowrap bg-blue py-2.5 text-center font-handjet text-[40px] leading-11.25 tracking-tighter text-cream">
+      <div className="relative  my-15 z-10 overflow-hidden whitespace-nowrap bg-blue py-2.5 text-center font-handjet text-[45px] leading-11.25 tracking-tighter text-cream">
         <ArchiveMarquee />
       </div>
 
@@ -119,7 +113,7 @@ export default function Home() {
         <h2 id="archive-heading" className="my-20 mb-15 shrink-0 text-center font-serif text-[33.18px] font-medium leading-8.75 tracking-tighter text-white">
           <TextAnimation as="span" text="SOMETHING BEAUTIFUL" direction="up" viewport={{ once: true, amount: 0.5 }} classname="text-white" />
           <br />
-          <TextAnimation as="span" text="IS GOING TO HAPPEN!" direction="up" viewport={{ once: true, amount: 0.5 }} classname="text-white" />
+          <TextAnimation as="span" text="IS GOING TO HAPPEN" direction="up" viewport={{ once: true, amount: 0.5 }} classname="text-white" />
           <br />
         </h2>
       </section>
