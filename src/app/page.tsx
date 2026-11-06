@@ -49,7 +49,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="relative  my-15 z-10 overflow-hidden whitespace-nowrap bg-blue py-2.5 text-center font-handjet text-[45px] leading-11.25 tracking-tighter text-cream">
+      <div className="relative  my-15 mt-45 z-10 overflow-hidden whitespace-nowrap bg-blue py-2.5 text-center font-handjet text-[45px] leading-11.25 tracking-tighter text-cream">
         <ArchiveMarquee />
       </div>
 

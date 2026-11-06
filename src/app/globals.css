@@ -150,6 +150,17 @@ section[id], footer[id] { scroll-margin-top: 24px; }
   color: #272098;
 }
 
+/* ObsidianUI CSS */
+
+.custom-discover-button {
+  --obsidian-discover-surface: #e5e7eb;
+  --obsidian-discover-text: #272098;
+  --obsidian-discover-fill: #272098;
+  --obsidian-discover-active-text: #ffffff;
+}
+
+/* The end of custom ObsidianUI CSS */
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
