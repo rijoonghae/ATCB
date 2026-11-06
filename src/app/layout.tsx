@@ -9,13 +9,14 @@ const garamond = EB_Garamond({
   variable: "--font-garamond",
   subsets: ["latin"],
   style: ["normal", "italic"],
-  weight: ["500", "600", "700"],
+  weight: ["400", "500", "600", "700"],
 });
 
 const jetBrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
+  style: ["normal", "italic"],
 });
 
 const handjet = Handjet({
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
+      data-scroll-behavior="smooth"
       className={cn("antialiased", garamond.variable, jetBrainsMono.variable, handjet.variable, "font-sans", inter.variable)}
     >
       <body>{children}</body>

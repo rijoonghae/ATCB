@@ -59,6 +59,7 @@ body {
 html { scroll-behavior: smooth; }
 a { text-underline-offset: 4px; }
 a:hover { text-decoration: underline; }
+a.obsidian-discover-button:hover { text-decoration: none; }
 a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
 section[id], footer[id] { scroll-margin-top: 24px; }
 

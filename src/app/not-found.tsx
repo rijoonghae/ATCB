@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
+import { DiscoverButton } from '@/components/block/discover-button'
+
 
 export default function NotFound() {
   return (
@@ -9,11 +10,9 @@ export default function NotFound() {
         404 NOT FOUND
       </h1>
       <p className="max-w-100 text-[20px] font-light leading-5.5 tracking-tighter">
-        You&apos;re not supposed to be here. Get out.
+        You&apos;re not supposed to be here. Please out.
       </p>
-      <Link href="/" className="rounded-[5px] bg-[#FFF5C8] px-5 py-3 text-[13px] font-bold tracking-tighter text-blue">
-        BACK TO THE ARCHIVE
-      </Link>
+      <DiscoverButton href="/" label="Back to archive" className="custom-discover-button" />
     </main>
   );
 }
