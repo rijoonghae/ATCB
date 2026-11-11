@@ -23,7 +23,7 @@ export default function Navbar() {
     <nav
       aria-label="Main navigation"
       className={cn(
-        "fixed left-1/2 top-0 z-50 flex h-13.75 w-82 max-w-[calc(100%-32px)] -translate-x-1/2 items-center justify-center gap-5 rounded-b-[22px] bg-cream text-[15px] font-bold tracking-tighter text-blue shadow-[0_6px_16px_rgba(39,32,152,0.35)] transition-transform duration-300",
+        "fixed left-1/2 top-0 z-50 flex h-13.75 w-80 max-w-[calc(100%-32px)] -translate-x-1/2 items-center justify-center gap-5 rounded-b-[22px] bg-cream text-[15px] font-bold tracking-tighter text-blue shadow-[0_6px_16px_rgba(39,32,152,0.4)] transition-transform duration-300",
         hidden && "-translate-y-full"
       )}
     >

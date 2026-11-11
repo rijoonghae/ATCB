@@ -174,7 +174,7 @@ export default function Home() {
           <div className="mx-5 mt-38.25 flex items-center gap-8.75">
 
             <p className="whitespace-nowrap text-[16px] font-extrabold leading-5.5 tracking-tighter">
-              confidential ‡ all the cities burned
+              all the cities burned ‡
             </p>
           <hr className="flex-2 border-t border-black" />
           </div>
