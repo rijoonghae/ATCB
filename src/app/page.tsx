@@ -63,13 +63,13 @@ export default function Home() {
 
       <section id="gallery" aria-label="The archive" className="gallery relative mt-6 min-h-[2832px] rounded-[10px] bg-cream px-5 pb-15 pt-25.5">
         <div className="mx-auto max-w-295.5">
-          <header className="flex flex-col items-start gap-6 md:flex-row md:items-center md:gap-4">
-            <Image src="/img/bdfm.png" alt="ATCB Pixel" width={75} height={72} />
+          <header className="flex flex-col items-start mx-5 gap-6 md:flex-row md:items-center md:gap-4">
+            <Image src="/img/bdfm.png" alt="ATCB Pixel" width={75*1.4} height={72*1.4} />
             <div className="w-full max-w-146">
               <h2 className="w-full max-w-68.5 font-serif text-[39.81px] font-bold leading-8 tracking-tighter md:text-center">
                 THE CAUSES.
               </h2>
-              <p className="mt-5.5 max-w-140 text-[19.2px] font-light leading-5.5 tracking-tighter md:ml-6">
+              <p className="mt-5.5 max-w-140 text-justify text-[19.2px] font-light leading-5.5 tracking-tighter md:ml-6">
                 These traits take shape around us—in what people do, what they accept, and what they leave unanswered. Each gives All the Cities Burned a reason to exist.
               </p>
             </div>
