@@ -23,7 +23,7 @@ const rows = [
 ];
 
 const contactLinks = [
-  { label: "Github", href: "https://www.github.com/" },
+  { label: "Patungan untuk Hutan", href: "https://kitabisa.com/campaign/patunganuntukhutan" },
   { label: "Google", href: "https://www.google.com/" },
   { label: "Startpage", href: "https://www.startpage.com/" },
 ];
@@ -140,7 +140,7 @@ export default function Home() {
                       className="h-full w-full -scale-x-100 object-cover grayscale blur-sm"
                     />
                     <div aria-hidden="true" className="absolute inset-0 bg-blue/55" />
-                    <div className="absolute inset-0 flex flex-col justify-end px-7 py-5 font-light h-20px] leading-13 tracking-tighter">
+                    <div className="absolute inset-0 flex flex-col justify-end px-7 py-5 font-light h-20px leading-10 tracking-tighter">
                       <h1>All the cities burned</h1>
                       <p>Luthfi Zulfan, October 2026</p>
                     </div>
@@ -149,14 +149,16 @@ export default function Home() {
               />
 
             </div>
+
             <div>
-              <h3 className="mx-5 font-serif text-[55px] font-normal leading-14.5 tracking-[-0.08em]">
+              <h3 className="mx-5 font-serif text-justify text-[53px] font-normal leading-14.5 tracking-[-0.09em]">
                 <TextAnimation as="span" text="FOR THE FOREST," direction="up" viewport={{ once: true, amount: 1 }} classname="text-black" />
                 <br />
                 <TextAnimation as="span" text="FOR THE ANIMALS," direction="up" viewport={{ once: true, amount: 1 }} classname="text-black" />
                 <br />
                 <TextAnimation as="span" text="AND FOR THE PEOPLE." direction="up" viewport={{ once: true, amount: 1 }} classname="text-black" />
               </h3>
+
               <p className="mx-5 mt-11.25 text-justify text-[16px] font-light leading-5.5 tracking-tighter">
                 in October 2026, Minim quis voluptate sunt ullamco tempor et ea excepteur id. Magna Lorem eiusmod sit mollit consectetur incididunt. Consequat officia fugiat sint enim occaecat in eiusmod dolor sunt dolor ullamco mollit reprehenderit. Eu aute quis et nisi incididunt culpa ex labore aliquip fugiat nostrud cillum. Nisi elit ut qui culpa elit Lorem sit sint non in irure labore ut id. Dolore esse labore ut laboris in consectetur proident veniam ad deserunt velit mollit officia mollit. Amet magna eu ea.
                 <br />
@@ -170,10 +172,11 @@ export default function Home() {
           </div>
 
           <div className="mx-5 mt-38.25 flex items-center gap-8.75">
-            <hr className="flex-1 border-t border-black" />
-            <p className="whitespace-nowrap text-[16px] font-medium leading-5.5 tracking-tighter">
+
+            <p className="whitespace-nowrap text-[16px] font-extrabold leading-5.5 tracking-tighter">
               confidential ‡ all the cities burned
             </p>
+          <hr className="flex-2 border-t border-black" />
           </div>
         </div>
       </section>
@@ -186,13 +189,13 @@ export default function Home() {
               href={c.href}
               label={c.label}
               newTab
-              className="custom-discover-button w-86 max-w-[90vw]"
+              className="custom-discover-button w-80 max-w-[60vw]"
             />
           ))}
         </div>
       </section>
 
-      <h2 id="archive-heading" className="my-20 mb-15 shrink-0 text-center font-serif text-[33.18px] font-medium leading-8.75 tracking-tighter text-white">
+      <h2 id="archive-heading" className="my-20 mb-15 shrink-0 text-center font-serif text-[38px] font-medium leading-8.75 tracking-tighter text-white">
         <TextAnimation as="span" text="SOMETHING" direction="up" viewport={{ once: true, amount: 0.5 }} classname="text-white" />
         <TextAnimation as="span" text="Beautiful" direction="up" viewport={{ once: true, amount: 0.5 }} classname="text-[#FFD900] italic lowercase font-light" />
         <br />
