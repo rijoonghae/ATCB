@@ -64,7 +64,7 @@ export default function Home() {
       <section id="gallery" aria-label="The archive" className="gallery relative mt-6 min-h-[2832px] rounded-[10px] bg-cream px-5 pb-15 pt-25.5">
         <div className="mx-auto max-w-295.5">
           <header className="flex flex-col items-start mx-5 gap-6 md:flex-row md:items-center md:gap-4">
-            <Image src="/img/bdfm.png" alt="ATCB Pixel" width={75*1.4} height={72*1.4} />
+            <Image src="/img/bdfm.png" alt="ATCB Pixel" width={75} height={72} />
             <div className="w-full max-w-146">
               <h2 className="w-full max-w-68.5 font-serif text-[39.81px] font-bold leading-8 tracking-tighter md:text-center">
                 THE CAUSES.
@@ -103,73 +103,137 @@ export default function Home() {
             THE AGENDA
           </p>
 
-
-          <div className="mt-50.25 grid max-w-280.75 items-start gap-x-17.5 gap-y-10 md:grid-cols-[510fr_543fr]">
-            <div className="relative aspect-510/721 w-full">
-              <FlipCard
-                width={510}
-                height={72}
-                radius={50}
-                background="#272098"
-                color="#FFFBE3"
-                shadow={false}
-                glare
-                glareOpacity={0.22}
-                ariaLabel="Flip for the forest, for the animals, and for the people"
-                className="h-full! w-full!"
-                front={
-                  <Image
-                    loading="eager"
-                    src="/img/for-the-people.webp"
-                    alt="A hand raised, wrapped in red and blue, for the forest, for the animals, and for the people"
-                    width={510}
-                    height={721}
-
-                    sizes="(max-width: 767px) 90vw, 510px"
-                    className="h-full w-full object-cover"
-                  />
-                }
-                back={
-                  <div className="relative h-full w-full">
+            {/* flipCard 1 */}
+            <div className="mt-50.25 grid max-w-280.75 items-start gap-x-17.5 gap-y-10 md:grid-cols-[510fr_543fr]">
+              <div className="relative aspect-510/721 w-full">
+                <FlipCard
+                  width={510}
+                  height={72}
+                  radius={50}
+                  background="#272098"
+                  color="#FFFBE3"
+                  shadow={false}
+                  glare
+                  glareOpacity={0.22}
+                  ariaLabel="Flip for the forest, for the animals, and for the people"
+                  className="h-full! w-full!"
+                  front={
                     <Image
+                      loading="eager"
                       src="/img/for-the-people.webp"
-                      alt=""
+                      alt="A hand raised, wrapped in red and blue, for the forest, for the animals, and for the people"
                       width={510}
                       height={721}
                       sizes="(max-width: 767px) 90vw, 510px"
-                      className="h-full w-full -scale-x-100 object-cover grayscale blur-sm"
+                      className="h-full w-full object-cover"
                     />
-                    <div aria-hidden="true" className="absolute inset-0 bg-blue/55" />
-                    <div className="absolute inset-0 flex flex-col justify-end px-7 py-5 font-light h-20px leading-10 tracking-tighter">
-                      <h1>All the cities burned</h1>
-                      <p>Luthfi Zulfan, October 2026</p>
+                  }
+                  back={
+                    <div className="relative h-full w-full">
+                      <Image
+                        src="/img/for-the-people.webp"
+                        alt=""
+                        width={510}
+                        height={721}
+                        sizes="(max-width: 767px) 90vw, 510px"
+                        className="h-full w-full -scale-x-100 object-cover grayscale blur-sm"
+                      />
+                      <div aria-hidden="true" className="absolute inset-0 bg-blue/55" />
+                      <div className="absolute inset-0 flex flex-col justify-end px-7 py-5 font-light h-20px leading-10 tracking-tighter">
+                        <h1>All the cities burned</h1>
+                        <p>Luthfi Zulfan, October 2026</p>
+                      </div>
                     </div>
-                  </div>
-                }
-              />
+                  }
+                />
+              </div>
 
+              <div className="">
+                <h3 className="mx-5 font-serif text-justify text-[53px] font-normal leading-14.5 tracking-[-0.09em]">
+                  <TextAnimation as="span" text="FOR THE FOREST," direction="up" viewport={{ once: true, amount: 1 }} classname="text-black" />
+                  <br />
+                  <TextAnimation as="span" text="FOR THE ANIMALS," direction="up" viewport={{ once: true, amount: 1 }} classname="text-black" />
+                  <br />
+                  <TextAnimation as="span" text="AND FOR THE PEOPLE." direction="up" viewport={{ once: true, amount: 1 }} classname="text-black" />
+                </h3>
+
+                <p className="mx-5 mt-11.25 text-justify text-[16px] font-light leading-5.5 tracking-tighter">
+                  in October 2026, Minim quis voluptate sunt ullamco tempor et ea excepteur id. Magna Lorem eiusmod sit mollit consectetur incididunt. Consequat officia fugiat sint enim occaecat in eiusmod dolor sunt dolor ullamco mollit reprehenderit. Eu aute quis et nisi incididunt culpa ex labore aliquip fugiat nostrud cillum. Nisi elit ut qui culpa elit Lorem sit sint non in irure labore ut id. Dolore esse labore ut laboris in consectetur proident veniam ad deserunt velit mollit officia mollit. Amet magna eu ea.
+                  <br />
+                  <br />
+                  Aliquip ipsum commodo Lorem do officia fugiat qui aute sit ullamco amet dolor. Aliquip exercitation culpa ullamco excepteur est. Id occaecat laborum eiusmod cillum veniam aute nostrud quis occaecat exercitation enim ipsum. In minim sint consectetur pariatur aliqua irure aliqua nisi consectetur sit adipisicing aliq minim adu sunt via terra velit mollit magna.
+                  <br />
+                  <br />
+                  #jagaindonesia
+                </p>
+              </div>
             </div>
 
-            <div>
-              <h3 className="mx-5 font-serif text-justify text-[53px] font-normal leading-14.5 tracking-[-0.09em]">
-                <TextAnimation as="span" text="FOR THE FOREST," direction="up" viewport={{ once: true, amount: 1 }} classname="text-black" />
-                <br />
-                <TextAnimation as="span" text="FOR THE ANIMALS," direction="up" viewport={{ once: true, amount: 1 }} classname="text-black" />
-                <br />
-                <TextAnimation as="span" text="AND FOR THE PEOPLE." direction="up" viewport={{ once: true, amount: 1 }} classname="text-black" />
-              </h3>
+            {/* flipCard 2 */}
+            <div className="mt-35 grid max-w-280.75 items-start gap-x-17.5 gap-y-10 md:grid-cols-[510fr_543fr]">
+              <div className="relative aspect-510/721 w-full md:order-2">
+                <FlipCard
+                  width={510}
+                  height={72}
+                  radius={50}
+                  background="#272098"
+                  color="#FFFBE3"
+                  shadow={false}
+                  glare
+                  glareOpacity={0.22}
+                  ariaLabel="Flip for the forest, for the animals, and for the people"
+                  className="h-full! w-full!"
+                  front={
+                    <Image
+                      loading="eager"
+                      src="/img/for-the-people.webp"
+                      alt="A hand raised, wrapped in red and blue, for the forest, for the animals, and for the people"
+                      width={510}
+                      height={721}
+                      sizes="(max-width: 767px) 90vw, 510px"
+                      className="h-full w-full object-cover"
+                    />
+                  }
+                  back={
+                    <div className="relative h-full w-full">
+                      <Image
+                        src="/img/for-the-people.webp"
+                        alt=""
+                        width={510}
+                        height={721}
+                        sizes="(max-width: 767px) 90vw, 510px"
+                        className="h-full w-full -scale-x-100 object-cover grayscale blur-sm"
+                      />
+                      <div aria-hidden="true" className="absolute inset-0 bg-blue/55" />
+                      <div className="absolute inset-0 flex flex-col justify-end px-7 py-5 font-light h-20px leading-10 tracking-tighter">
+                        <h1>All the cities burned</h1>
+                        <p>Luthfi Zulfan, October 2026</p>
+                      </div>
+                    </div>
+                  }
+                />
+              </div>
 
-              <p className="mx-5 mt-11.25 text-justify text-[16px] font-light leading-5.5 tracking-tighter">
-                in October 2026, Minim quis voluptate sunt ullamco tempor et ea excepteur id. Magna Lorem eiusmod sit mollit consectetur incididunt. Consequat officia fugiat sint enim occaecat in eiusmod dolor sunt dolor ullamco mollit reprehenderit. Eu aute quis et nisi incididunt culpa ex labore aliquip fugiat nostrud cillum. Nisi elit ut qui culpa elit Lorem sit sint non in irure labore ut id. Dolore esse labore ut laboris in consectetur proident veniam ad deserunt velit mollit officia mollit. Amet magna eu ea.
-                <br />
-                <br />
-                Aliquip ipsum commodo Lorem do officia fugiat qui aute sit ullamco amet dolor. Aliquip exercitation culpa ullamco excepteur est. Id occaecat laborum eiusmod cillum veniam aute nostrud quis occaecat exercitation enim ipsum. In minim sint consectetur pariatur aliqua irure aliqua nisi consectetur sit adipisicing aliq minim adu sunt via terra velit mollit magna.
-                <br />
-                <br />
-                #jagaindonesia
-              </p>
+              <div className=" md:order-1">
+                <h3 className="mx-5 font-serif text-justify text-[53px] font-normal leading-14.5 tracking-[-0.09em]">
+                  <TextAnimation as="span" text="FOR THE FOREST," direction="up" viewport={{ once: true, amount: 1 }} classname="text-black" />
+                  <br />
+                  <TextAnimation as="span" text="FOR THE ANIMALS," direction="up" viewport={{ once: true, amount: 1 }} classname="text-black" />
+                  <br />
+                  <TextAnimation as="span" text="AND FOR THE PEOPLE." direction="up" viewport={{ once: true, amount: 1 }} classname="text-black" />
+                </h3>
+
+                <p className="mx-5 mt-11.25 text-justify text-[16px] font-light leading-5.5 tracking-tighter">
+                  in October 2026, Minim quis voluptate sunt ullamco tempor et ea excepteur id. Magna Lorem eiusmod sit mollit consectetur incididunt. Consequat officia fugiat sint enim occaecat in eiusmod dolor sunt dolor ullamco mollit reprehenderit. Eu aute quis et nisi incididunt culpa ex labore aliquip fugiat nostrud cillum. Nisi elit ut qui culpa elit Lorem sit sint non in irure labore ut id. Dolore esse labore ut laboris in consectetur proident veniam ad deserunt velit mollit officia mollit. Amet magna eu ea.
+                  <br />
+                  <br />
+                  Aliquip ipsum commodo Lorem do officia fugiat qui aute sit ullamco amet dolor. Aliquip exercitation culpa ullamco excepteur est. Id occaecat laborum eiusmod cillum veniam aute nostrud quis occaecat exercitation enim ipsum. In minim sint consectetur pariatur aliqua irure aliqua nisi consectetur sit adipisicing aliq minim adu sunt via terra velit mollit magna.
+                  <br />
+                  <br />
+                  #jagaindonesia
+                </p>
+              </div>
             </div>
-          </div>
 
           <div className="mx-5 mt-38.25 flex items-center gap-8.75">
 
