@@ -186,7 +186,7 @@ export default function Home() {
                   front={
                     <Image
                       loading="eager"
-                      src="/img/for-the-people.webp"
+                      src="/img/2025-artwork.webp"
                       alt="A hand raised, wrapped in red and blue, for the forest, for the animals, and for the people"
                       width={510}
                       height={721}
@@ -197,7 +197,7 @@ export default function Home() {
                   back={
                     <div className="relative h-full w-full">
                       <Image
-                        src="/img/for-the-people.webp"
+                        src="/img/2025-artwork.webp"
                         alt=""
                         width={510}
                         height={721}
@@ -207,7 +207,7 @@ export default function Home() {
                       <div aria-hidden="true" className="absolute inset-0 bg-blue/55" />
                       <div className="absolute inset-0 flex flex-col justify-end px-7 py-5 font-light h-20px leading-10 tracking-tighter">
                         <h1>All the cities burned</h1>
-                        <p>Luthfi Zulfan, October 2026</p>
+                        <p>Luthfi Zulfan, August 2025</p>
                       </div>
                     </div>
                   }
@@ -215,12 +215,8 @@ export default function Home() {
               </div>
 
               <div className=" md:order-1">
-                <h3 className="mx-5 font-serif text-justify text-[53px] font-normal leading-14.5 tracking-[-0.09em]">
-                  <TextAnimation as="span" text="FOR THE FOREST," direction="up" viewport={{ once: true, amount: 1 }} classname="text-black" />
-                  <br />
-                  <TextAnimation as="span" text="FOR THE ANIMALS," direction="up" viewport={{ once: true, amount: 1 }} classname="text-black" />
-                  <br />
-                  <TextAnimation as="span" text="AND FOR THE PEOPLE." direction="up" viewport={{ once: true, amount: 1 }} classname="text-black" />
+                <h3 className="mx-5 font-serif text-justify text-[53px] font-normal leading-14.5 tracking-tighter ">
+                  <TextAnimation as="span" text="SALUS POPULI SUPREMA LEX ESTO" direction="up" viewport={{ once: true, amount: 1 }} classname="text-black" />
                 </h3>
 
                 <p className="mx-5 mt-11.25 text-justify text-[16px] font-light leading-5.5 tracking-tighter">
@@ -268,7 +264,7 @@ export default function Home() {
       </h2>
 
       <footer id="about" className="relative h-270">
-        <Image loading="eager" src="/img/footer-bg.png" alt="" fill sizes="100vw" className="object-cover" />
+        <Image loading="lazy" decoding="async" src="/img/footer-bg.webp" alt="" fill sizes="100vw" className="object-cover" />
         {/* BLUR: tepi atas footer, sesuai node Figma 4464:3 */}
         <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 -top-22.5 h-49.75 bg-[linear-gradient(to_bottom,transparent_20%,#272098_25%,#272098_55%,transparent_100%)]" />
         <div className="absolute bottom-11.25 left-12.5 text-white">
