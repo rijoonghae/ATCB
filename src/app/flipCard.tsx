@@ -269,7 +269,7 @@ const FlipCard: React.FC<FlipCardProps> = ({
       aria-pressed={shown}
       aria-label={ariaLabel}
       aria-disabled={disabled || undefined}
-      className={`group relative inline-block max-w-full cursor-pointer touch-pan-y select-none outline-none [w-(--fc-w)] [h-(--fc-h)] [rounded-(--fc-radius)] [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] data-[axis=x]:touch-pan-x data-[draggable]:cursor-grab data-[dragging]:cursor-grabbing data-[disabled]:cursor-default data-[disabled]:opacity-60${className ? ` ${className}` : ''}`}
+      className={`group relative inline-block max-w-full cursor-pointer touch-pan-y select-none outline-none w-(--fc-w) h-(--fc-h) rounded-(--fc-radius) [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] data-[axis=x]:touch-pan-x data-[draggable]:cursor-grab data-[dragging]:cursor-grabbing data-[disabled]:cursor-default data-[disabled]:opacity-60${className ? ` ${className}` : ''}`}
       data-axis={axis}
       data-draggable={draggable && !disabled && !reduce ? '' : undefined}
       data-dragging={dragging ? '' : undefined}
@@ -304,14 +304,14 @@ const FlipCard: React.FC<FlipCardProps> = ({
     >
       {shadow ? (
         <motion.span
-          className="pointer-events-none absolute inset-[12%_9%_-5%] [rounded-(--fc-radius)] [background:color-mix(in_srgb,var(--fc-shadow)_calc(var(--fc-shadow-o)*100%),transparent)] [filter:blur(22px)]"
+          className="pointer-events-none absolute inset-[12%_9%_-5%] rounded-(--fc-radius) [background:color-mix(in_srgb,var(--fc-shadow)_calc(var(--fc-shadow-o)*100%),transparent)] [filter:blur(22px)]"
           aria-hidden="true"
           style={axis === 'x' ? { scaleY: spread, opacity: shade } : { scaleX: spread, opacity: shade }}
         />
       ) : null}
       <motion.div className="absolute inset-0 transform-3d" style={reduce ? undefined : rotorStyle}>
         <div
-          className="absolute inset-0 overflow-hidden [rounded-(--fc-radius)] [background:var(--fc-bg)] [color:var(--fc-ink)] [backface-visibility:hidden] [-webkit-backface-visibility:hidden] [&_img]:[-webkit-user-drag:none] group-data-[fade]:opacity-0 group-data-[fade]:[backface-visibility:visible] group-data-[fade]:[-webkit-backface-visibility:visible] group-data-[fade]:[transition:opacity_200ms_ease] group-data-[fade=front]:opacity-100!"
+          className="absolute inset-0 overflow-hidden rounded-(--fc-radius) [background:var(--fc-bg)] [color:var(--fc-ink)] [backface-visibility:hidden] [-webkit-backface-visibility:hidden] [&_img]:[-webkit-user-drag:none] group-data-[fade]:opacity-0 group-data-[fade]:[backface-visibility:visible] group-data-[fade]:[-webkit-backface-visibility:visible] group-data-[fade]:[transition:opacity_200ms_ease] group-data-[fade=front]:opacity-100!"
           aria-hidden={shown}
           inert={shown}
         >
@@ -324,7 +324,7 @@ const FlipCard: React.FC<FlipCardProps> = ({
           ) : null}
         </div>
         <div
-          className="absolute inset-0 overflow-hidden [rounded-(--fc-radius)] [background:var(--fc-bg)] [color:var(--fc-ink)] [backface-visibility:hidden] [-webkit-backface-visibility:hidden] [&_img]:[-webkit-user-drag:none] group-data-[fade]:opacity-0 group-data-[fade]:[backface-visibility:visible] group-data-[fade]:[-webkit-backface-visibility:visible] group-data-[fade]:[transition:opacity_200ms_ease] [transform:rotateY(180deg)] group-data-[axis=x]:[transform:rotateX(180deg)] group-data-[fade]:[transform:none]! group-data-[fade=back]:opacity-100!"
+          className="absolute inset-0 overflow-hidden rounded-(--fc-radius) [background:var(--fc-bg)] [color:var(--fc-ink)] [backface-visibility:hidden] [-webkit-backface-visibility:hidden] [&_img]:[-webkit-user-drag:none] group-data-[fade]:opacity-0 group-data-[fade]:[backface-visibility:visible] group-data-[fade]:[-webkit-backface-visibility:visible] group-data-[fade]:[transition:opacity_200ms_ease] [transform:rotateY(180deg)] group-data-[axis=x]:[transform:rotateX(180deg)] group-data-[fade]:[transform:none]! group-data-[fade=back]:opacity-100!"
           aria-hidden={!shown}
           inert={!shown}
         >

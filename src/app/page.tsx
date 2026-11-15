@@ -3,6 +3,7 @@ import ArchiveMarquee from "./archive-marquee";
 import Navbar from "./navbar";
 import FlipCard from "./flipCard";
 import TextAnimation from "@/components/ui/scroll-text";
+import { Highlighter } from "@/components/ui/highlighter"
 import { DiscoverButton } from "@/components/block/discover-button";
 import witness from "../../assets/1-the-witness.webp";
 import abstract from "../../assets/2-the-abstract.webp";
@@ -32,7 +33,7 @@ export default function Home() {
   return (
     <main className="overflow-hidden bg-blue font-mono text-black">
       <section className="hero relative h-275 overflow-hidden bg-blue">
-        <Image src="/img/main-background.avif" alt="" fill preload sizes="100vw" className="scale-[1.1] object-cover bg-blue opacity-80" />
+        <Image loading="eager" src="/img/main-background.avif" alt="" fill preload sizes="100vw" className="scale-[1.1] object-cover bg-blue opacity-80" />
         {/* // FADE: atas dan bawah layer Hero → Showcase, tanpa blur samping */}
         <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 top-[82.27%] h-149 bg-[linear-gradient(to_bottom,transparent_0%,#272098_18%,#272098_82%,transparent_100%)]" />
         <Navbar />
@@ -109,7 +110,7 @@ export default function Home() {
                 <FlipCard
                   width={510}
                   height={72}
-                  radius={50}
+                  radius={22}
                   background="#272098"
                   color="#FFFBE3"
                   shadow={false}
@@ -119,7 +120,7 @@ export default function Home() {
                   className="h-full! w-full!"
                   front={
                     <Image
-                      loading="eager"
+                      loading="lazy"
                       src="/img/for-the-people.webp"
                       alt="A hand raised, wrapped in red and blue, for the forest, for the animals, and for the people"
                       width={510}
@@ -175,7 +176,7 @@ export default function Home() {
                 <FlipCard
                   width={510}
                   height={72}
-                  radius={50}
+                  radius={22}
                   background="#272098"
                   color="#FFFBE3"
                   shadow={false}
@@ -185,7 +186,7 @@ export default function Home() {
                   className="h-full! w-full!"
                   front={
                     <Image
-                      loading="eager"
+                      loading="lazy"
                       src="/img/2025-artwork.webp"
                       alt="A hand raised, wrapped in red and blue, for the forest, for the animals, and for the people"
                       width={510}
@@ -198,6 +199,7 @@ export default function Home() {
                     <div className="relative h-full w-full">
                       <Image
                         src="/img/2025-artwork.webp"
+                        loading="lazy"
                         alt=""
                         width={510}
                         height={721}
@@ -220,7 +222,9 @@ export default function Home() {
                 </h3>
 
                 <p className="mx-5 mt-11.25 text-justify text-[16px] font-light leading-5.5 tracking-tighter">
-                  in October 2026, Minim quis voluptate sunt ullamco tempor et ea excepteur id. Magna Lorem eiusmod sit mollit consectetur incididunt. Consequat officia fugiat sint enim occaecat in eiusmod dolor sunt dolor ullamco mollit reprehenderit. Eu aute quis et nisi incididunt culpa ex labore aliquip fugiat nostrud cillum. Nisi elit ut qui culpa elit Lorem sit sint non in irure labore ut id. Dolore esse labore ut laboris in consectetur proident veniam ad deserunt velit mollit officia mollit. Amet magna eu ea.
+                  in October 2026, <Highlighter action="highlight" color="#FFD900">
+                      Minim quis voluptate
+                    </Highlighter>{" "} sunt ullamco tempor et ea excepteur id. Magna Lorem eiusmod sit mollit consectetur incididunt. Consequat officia fugiat sint enim occaecat in eiusmod dolor sunt dolor ullamco mollit reprehenderit. Eu aute quis et nisi incididunt culpa ex labore aliquip fugiat nostrud cillum. Nisi elit ut qui culpa elit Lorem sit sint non in irure labore ut id. Dolore esse labore ut laboris in consectetur proident veniam ad deserunt velit mollit officia mollit. Amet magna eu ea.
                   <br />
                   <br />
                   Aliquip ipsum commodo Lorem do officia fugiat qui aute sit ullamco amet dolor. Aliquip exercitation culpa ullamco excepteur est. Id occaecat laborum eiusmod cillum veniam aute nostrud quis occaecat exercitation enim ipsum. In minim sint consectetur pariatur aliqua irure aliqua nisi consectetur sit adipisicing aliq minim adu sunt via terra velit mollit magna.
