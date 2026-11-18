@@ -43,7 +43,7 @@ export default function Home() {
       </section>
 
       <section className="showcase mx-auto flex min-h-187 max-w-295.5 flex-col items-center justify-center px-5 pb-8" aria-labelledby="archive-heading">
-        <h2 id="archive-heading" className="my-20 mb-15 shrink-0 text-center font-serif text-[33.18px] font-medium leading-8.75 tracking-tighter text-white">
+        <h2 id="archive-heading" className="my-20 mb-15 shrink-0 text-center font-serif text-[40px] font-medium leading-8.75 tracking-tighter text-white">
           <TextAnimation as="span" text="A PERSONAL ARCHIVE" direction="up" viewport={{ once: true, amount: 0.2 }} classname="text-white" />
           <br />
           <TextAnimation as="span" text="OF WORK, THOUGHTS," direction="up" viewport={{ once: true, amount: 0.2 }} classname="text-white" />
@@ -105,13 +105,13 @@ export default function Home() {
           </p>
 
             {/* flipCard 1 */}
-            <div className="mt-50.25 grid max-w-280.75 items-start gap-x-17.5 gap-y-10 md:grid-cols-[510fr_543fr]">
+            <div className="mt-50.25 grid max-w-280.75 items-start px-1 gap-x-17.5 gap-y-10 md:grid-cols-[510fr_543fr]">
               <div className="relative aspect-510/721 w-full">
                 <FlipCard
                   width={510}
                   height={72}
                   radius={22}
-                  background="#272098"
+                  background="#27272a"
                   color="#FFFBE3"
                   shadow={false}
                   glare
@@ -137,10 +137,11 @@ export default function Home() {
                         width={510}
                         height={721}
                         sizes="(max-width: 767px) 90vw, 510px"
-                        className="h-full w-full -scale-x-100 object-cover grayscale blur-sm"
+                        className="h-full w-full -scale-x-100 object-cover grayscale blur-xs"
                       />
-                      <div aria-hidden="true" className="absolute inset-0 bg-blue/55" />
-                      <div className="absolute inset-0 flex flex-col justify-end px-7 py-5 font-light h-20px leading-10 tracking-tighter">
+                      <div aria-hidden="true" className="absolute inset-0" />
+                      <div className="absolute inset-3 flex flex-col justify-end px-7 py-5 font-light h-20px leading-10 tracking-tighter">
+
                         <h1>All the cities burned</h1>
                         <p>Luthfi Zulfan, October 2026</p>
                       </div>
@@ -150,7 +151,7 @@ export default function Home() {
               </div>
 
               <div className="">
-                <h3 className="mx-5 font-serif text-justify text-[53px] font-normal leading-14.5 tracking-[-0.09em]">
+                <h3 className="mx-5 font-serif text-center text-[53px] font-normal leading-14.5 tracking-[-0.09em] md:text-justify">
                   <TextAnimation as="span" text="FOR THE FOREST," direction="up" viewport={{ once: true, amount: 1 }} classname="text-black" />
                   <br />
                   <TextAnimation as="span" text="FOR THE ANIMALS," direction="up" viewport={{ once: true, amount: 1 }} classname="text-black" />
@@ -170,14 +171,15 @@ export default function Home() {
               </div>
             </div>
 
+          <hr className="mt-14.75 border-t-2 border-dashed border-black" />
             {/* flipCard 2 */}
-            <div className="mt-35 grid max-w-280.75 items-start gap-x-17.5 gap-y-10 md:grid-cols-[510fr_543fr]">
+            <div className="mt-20 grid max-w-280.75 items-start gap-x-17.5 gap-y-10 px-1 md:grid-cols-[510fr_543fr] md:px-0">
               <div className="relative aspect-510/721 w-full md:order-2">
                 <FlipCard
                   width={510}
                   height={72}
                   radius={22}
-                  background="#272098"
+                  background="#27272a"
                   color="#FFFBE3"
                   shadow={false}
                   glare
@@ -206,8 +208,8 @@ export default function Home() {
                         sizes="(max-width: 767px) 90vw, 510px"
                         className="h-full w-full -scale-x-100 object-cover grayscale blur-sm"
                       />
-                      <div aria-hidden="true" className="absolute inset-0 bg-blue/55" />
-                      <div className="absolute inset-0 flex flex-col justify-end px-7 py-5 font-light h-20px leading-10 tracking-tighter">
+                      <div aria-hidden="true" className="absolute inset-0" />
+                      <div className="absolute inset-3 flex flex-col justify-end px-7 py-5 font-light h-20px leading-10 tracking-tighter">
                         <h1>All the cities burned</h1>
                         <p>Luthfi Zulfan, August 2025</p>
                       </div>
@@ -217,12 +219,12 @@ export default function Home() {
               </div>
 
               <div className=" md:order-1">
-                <h3 className="mx-5 font-serif text-justify text-[53px] font-normal leading-14.5 tracking-tighter ">
+                <h3 className="mx-5 font-serif text-center text-[53px] font-normal leading-14.5 tracking-tighter md:text-right">
                   <TextAnimation as="span" text="SALUS POPULI SUPREMA LEX ESTO" direction="up" viewport={{ once: true, amount: 1 }} classname="text-black" />
                 </h3>
 
                 <p className="mx-5 mt-11.25 text-justify text-[16px] font-light leading-5.5 tracking-tighter">
-                  in October 2026, <Highlighter action="highlight" color="#FFD900">
+                  in October 2026, <Highlighter action="highlight" color="#FFD900" animationDuration={1200}>
                       Minim quis voluptate
                     </Highlighter>{" "} sunt ullamco tempor et ea excepteur id. Magna Lorem eiusmod sit mollit consectetur incididunt. Consequat officia fugiat sint enim occaecat in eiusmod dolor sunt dolor ullamco mollit reprehenderit. Eu aute quis et nisi incididunt culpa ex labore aliquip fugiat nostrud cillum. Nisi elit ut qui culpa elit Lorem sit sint non in irure labore ut id. Dolore esse labore ut laboris in consectetur proident veniam ad deserunt velit mollit officia mollit. Amet magna eu ea.
                   <br />
