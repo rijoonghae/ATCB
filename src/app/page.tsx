@@ -1,10 +1,12 @@
 import Image from "next/image";
 import ArchiveMarquee from "./archive-marquee";
 import Navbar from "./navbar";
-import FlipCard from "./flipCard";
+import FlipCard from "@/components/ui/flipCard";
 import TextAnimation from "@/components/ui/scroll-text";
 import { Highlighter } from "@/components/ui/highlighter"
 import { DiscoverButton } from "@/components/block/discover-button";
+import { TypingAnimation } from "@/components/ui/typing-animation"
+
 import witness from "../../assets/1-the-witness.webp";
 import abstract from "../../assets/2-the-abstract.webp";
 import ignorant from "../../assets/3-the-ignorant.webp";
@@ -38,7 +40,9 @@ export default function Home() {
         <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 top-[82.27%] h-149 bg-[linear-gradient(to_bottom,transparent_0%,#272098_18%,#272098_82%,transparent_100%)]" />
         <Navbar />
         <h1 className="absolute left-[max(20px,calc(50%-588px))] top-92 font-serif text-[84px] font-bold italic leading-17.25 tracking-tighter text-[#FFD900]">
-          all the<br />cities burned
+          <TypingAnimation typeSpeed={100}>all the</TypingAnimation>
+          <br />
+          <TypingAnimation duration={150} cursorStyle="line">cities burned</TypingAnimation>
         </h1>
       </section>
 
